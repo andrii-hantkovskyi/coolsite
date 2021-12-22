@@ -1,0 +1,15 @@
+{% extends 'games/base.html' %}
+{% block title %}
+    {{ game.name }}
+{% endblock %}
+
+{% block content %}
+    <div>
+        <h2>{{ game.name }}</h2>
+        <img src="{{ game.image.url }}" alt="{{ game.name }}">
+        <p>{{ game.content }}</p>
+        <p>Added: {{ game.pub_date }}<br>Last updated: {{ game.last_update }}</p>
+    </div>
+    <a href="{% url 'edit-game' game_slug=game.slug %}"><button class="btn btn-outline-info">Edit</button></a>
+    <a href="{% url 'delete-game' game_slug=game.slug %}"><button class="btn btn-outline-danger">Remove</button></a>
+{% endblock %}

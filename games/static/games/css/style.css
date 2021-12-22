@@ -1,0 +1,14 @@
+.game_container {
+    width: 50vh;
+    height: 25vh;
+    margin-bottom: 2em;
+}
+
+.game_image {
+    width: 100px;
+    height: 100px;
+}
+
+.game_content {
+    font-size: 14px;
+}

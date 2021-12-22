@@ -1,0 +1,12 @@
+{% extends 'games/base.html' %}
+{% block title %}
+    Edit {{ game.name }}
+{% endblock %}
+
+{% block content %}
+    <form class="d-flex align-items-center  flex-column" action="{% url 'edit-game' game.slug %}" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit" class="btn btn-success mt-2">Submit</button>
+    </form>
+{% endblock %}
