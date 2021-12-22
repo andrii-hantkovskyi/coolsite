@@ -1,6 +1,6 @@
 <h1>Game blog project</h1>
 
-**This project is aimed to improve my work with views.**
+**This project is aimed to improve my work with Django.**
 
 To run this project you need:
 1. Clone this repository.
@@ -11,4 +11,4 @@ To run this project you need:
 6. Run server `python manage.py runserver`.
 7. Open your browser and go to **<a>localhost:8000</a>**.
 
-Front-end isn't very good, because I didn't focus on it. 
+Front-end isn't very good, because I didn't focus on it :)
